@@ -1,12 +1,35 @@
-# React + Vite
+# 🌦️ Animated Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **beautiful, animated weather application** built with **React.js**, featuring smooth gradient backgrounds that change based on the weather and temperature.  
+It fetches **real-time weather data** from the [OpenWeather API](https://openweathermap.org/api) and displays it in a clean, responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- 🎨 **Dynamic Animated Backgrounds** – changes with temperature & weather conditions.
+- 🌍 **Real-Time Weather Data** – powered by OpenWeather API.
+- 📱 **Responsive Design** – works on desktop, tablet, and mobile.
+- 🌡️ Displays temperature, humidity, weather description, and icons.
+- 🔄 Smooth transitions and fade-in animations.
+- 🚀 Lightweight and fast.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Preview
+![Weather App Screenshot](./preview.png)  
+*(Add your app screenshot here)*
+
+---
+
+## 🛠️ Tech Stack
+- **React.js** – Frontend framework
+- **CSS3** – Styling & animations
+- **OpenWeather API** – Weather data source
+
+---
+
+## 🚀 Installation & Setup
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/weather-app.git
+   cd weather-app
