@@ -1,0 +1,150 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+/* App wrapper */
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  transition: background 1s ease;
+}
+
+/* Weather card */
+.content {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 25px;
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s ease;
+}
+
+/* Input */
+.input-group {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #eee;
+  transform: scale(1.05);
+}
+
+/* Weather data */
+.card {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  margin-top: 10px;
+}
+
+/* Info & error */
+.info, .error {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.error {
+  color: #ffb3b3;
+}
+
+/* Fade in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Backgrounds */
+.app.default {
+  background: linear-gradient(270deg, #1e3c72, #2a5298);
+  background-size: 800% 800%;
+  animation: moveBG 30s ease infinite;
+}
+
+.app.cold {
+  background: linear-gradient(270deg, #2193b0, #6dd5ed);
+  background-size: 800% 800%;
+  animation: moveBG 30s ease infinite;
+}
+
+.app.mild {
+  background: linear-gradient(270deg, #56ab2f, #a8e063);
+  background-size: 800% 800%;
+  animation: moveBG 30s ease infinite;
+}
+
+.app.warm {
+  background: linear-gradient(270deg, #f7971e, #ffd200);
+  background-size: 800% 800%;
+  animation: moveBG 30s ease infinite;
+}
+
+.app.hot {
+  background: linear-gradient(270deg, #fff200, #ffcc00);
+  background-size: 800% 800%;
+  animation: moveBG 30s ease infinite;
+}
+
+.app.cloudy {
+  background: linear-gradient(270deg, #bdc3c7, #2c3e50);
+  background-size: 800% 800%;
+  animation: fogEffect 40s ease infinite;
+}
+
+/* Background animations */
+@keyframes moveBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fogEffect {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
