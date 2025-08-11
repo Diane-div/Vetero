@@ -15,12 +15,6 @@ It fetches **real-time weather data** from the [OpenWeather API](https://openwea
 
 ---
 
-## 📸 Preview
-![Weather App Screenshot](./preview.png)  
-*(Add your app screenshot here)*
-
----
-
 ## 🛠️ Tech Stack
 - **React.js** – Frontend framework
 - **CSS3** – Styling & animations
