@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-
+//This is the main file
 const App = () => {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState(null);
